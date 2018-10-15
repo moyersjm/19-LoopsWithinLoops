@@ -294,7 +294,9 @@ def print_characters_slanted(sequence_of_strings):
     # ------------------------------------------------------------------
     for k in range(len(sequence_of_strings)):
         for l in range(len(sequence_of_strings[k])):
-            print(" "*l + sequence_of_strings[k][l])
+            for m in range(l):
+                print(' ', end='')
+            print(sequence_of_strings[k][l])
 
 
 # ----------------------------------------------------------------------
